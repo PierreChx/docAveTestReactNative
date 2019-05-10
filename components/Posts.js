@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import {Alert} from 'react-native'
-import { Body, Button, Title, Container, Header, Content, Accordion,List, ListItem, Text, Left, Right, Icon, Segment } from "native-base";
+import {AsyncStorage} from 'react-native';
+import {Text} from 'react-native-elements';
+import { Accordion, Body, Button, Container, Content, Header, Icon,List, ListItem, Left, Right, Segment, Title } from "native-base";
 
 
 export default class Posts extends Component {
@@ -12,27 +13,13 @@ export default class Posts extends Component {
     };
   }
   componentWillMount(){
-    var ctx = this;
-    fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(function(response){
-      return response.json();
-    }).then(function(data){
-      // check if we got the data
-      console.log(data)
-      //change key "body" to "content" to be compatible with Accordion
-      var posts = data.map((post) => {
-        post.content = post.body; delete post.body;return post;
-      });
-      // sort post by alphabetical order
-      posts.sort(function (a, b) {
-        return (a.title).localeCompare(b.title);
-      })
-      //stock posts in the state
-      ctx.setState({"posts": posts});
-    }).catch(function(error){
-      console.error(error);
-    });
-  }
+    ctx = this
+    AsyncStorage.getItem("posts",
+            function(error, data){
+              console.log(JSON.parse(data));
+              ctx.setState({"posts": JSON.parse(data)});
+            })
+          }
 
   render() {
     //pagination 10 by 10
