@@ -4,6 +4,9 @@
     "slug": "docAve",
     "privacy": "public",
     "sdkVersion": "32.0.0",
+    "android": {
+          "package": "com.docave.testreactnative"
+        },
     "platforms": [
       "ios",
       "android"
