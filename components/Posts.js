@@ -49,14 +49,14 @@ export default class Posts extends Component {
                       "page": this.state.page-1
                     })
                   }}>
-          <Icon name='arrow-back' />
+          <Icon name='arrow-back'   style={{color: "#42a8b6"}}/>
         </Button>
         : null
         }
         </Left>
         <Body>
           <Segment>
-            <Text style={{paddingTop: 10, textAlign : "center"}}>Page no {this.state.page}</Text>
+            <Text style={{paddingTop: 10, color: "#42a8b6", textAlign : "center"}}>Page no {this.state.page}</Text>
           </Segment>
         </Body>
         <Right>
@@ -66,14 +66,15 @@ export default class Posts extends Component {
                         "page": this.state.page+1
                       })
                     }} >
-            <Icon name='arrow-forward'/>
+            <Icon name='arrow-forward'   style={{color: "#42a8b6"}}/>
           </Button>
                 : null }
         </Right>
       </Header>
         <Content padder>
            <Accordion
-          dataArray={dataArray}/>
+          dataArray={dataArray}
+          contentStyle={{ backgroundColor: "#e2fcff" }}/>
         </Content>
       </Container>
     );
