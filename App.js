@@ -44,7 +44,7 @@ class HomeScreen extends React.Component {
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor:'#42a8b6'}}>
-        <Image source={require('./assets/logo.png')} style={{width: 150, height: 150}} />
+        <Image source={require('./assets/logo.png')} style={{width: 250, height: 150}} />
         <ThemeProvider  theme={theme}>
             <Button
               title="Display Posts"

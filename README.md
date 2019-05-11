@@ -12,4 +12,6 @@ To launch the app with Expo
 6- on Smartphone, download app Expo (app store or google play)
 7a- on IOS, open camera and scan the QR Code (cf 6), a popup show up to open Expo, click on it
 7b- on Android, open Expo, click on "Scan QR Code" and scan the QR Code (cf 6)
-   
+
+App
+1- On the Home Page, click on "Display Posts" to see the posts.
