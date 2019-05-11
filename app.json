@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "docAve",
-    "slug": "docAve",
+    "name": "Doc Avenue Test",
+    "slug": "DocAvenueTest",
     "privacy": "public",
     "sdkVersion": "32.0.0",
     "android": {
-          "package": "com.docave.testreactnative"
+          "package": "com.DocAvenueTest.testreactnative"
         },
     "platforms": [
       "ios",
@@ -13,7 +13,7 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logoApp.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",

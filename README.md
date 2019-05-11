@@ -1,7 +1,5 @@
 # docAveTestReactNative
 
-APK file link: https://expo.io/artifacts/0c57d7ea-b351-4230-9990-fa75fea72766
-
 To launch the app with Expo
 1- open terminal
 2- git clone https://github.com/XavierLagente/docAveTestReactNative.git <MyFolder>
